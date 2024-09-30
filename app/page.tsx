@@ -1,8 +1,6 @@
-import { Calendar, CircleUserRound, Headphones, LayoutDashboard, Settings, UserPlus, Users, Search, Bell, MessageSquare } from 'lucide-react'
-import Image from "next/image"
-import Sidebar from './_Components/Sidebar'
-import Navbar from './_Components/Navbar'
 import DashBoard from './_Components/DashBoard'
+import Navbar from './_Components/Navbar'
+import Sidebar from './_Components/Sidebar'
 
 export default function Home() {
   return (

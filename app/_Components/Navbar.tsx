@@ -1,6 +1,4 @@
-import { Search, Bell, MessageSquare } from "lucide-react";
-import Image from "next/image";
-import React from "react";
+import { Bell, MessageSquare, Search } from "lucide-react";
 
 const Navbar = () => {
   return (

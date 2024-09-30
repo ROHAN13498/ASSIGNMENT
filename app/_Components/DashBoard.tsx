@@ -1,8 +1,7 @@
-import React from "react";
-import Card from "./Card";
+import { MoreHorizontal } from "lucide-react";
 import AnalyticsCard from "./AnalyticsCard";
 import Annountcement from "./Annountcement";
-import { MoreHorizontal } from "lucide-react";
+import Card from "./Card";
 import RecentActivty from "./RecentActivty";
 
 interface CardData {

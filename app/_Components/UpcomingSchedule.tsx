@@ -1,11 +1,9 @@
 import { MoreHorizontal } from 'lucide-react'
-import React from 'react'
 
 const UpcomingSchedule = () => {
   return (
     <div className='w-full'>
         <div className="bg-white p-4 rounded-lg  ">
-          
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-lg font-semibold">Upcoming Schedule</h3>
             <select className="border rounded-lg px-2 py-1">

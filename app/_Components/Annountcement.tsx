@@ -1,5 +1,4 @@
-import { Star, MoreHorizontal } from "lucide-react";
-import React from "react";
+import { MoreHorizontal, Star } from "lucide-react";
 
 const Annountcement = () => {
   return (
