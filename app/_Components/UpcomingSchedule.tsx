@@ -39,8 +39,8 @@ const UpcomingSchedule: React.FC = () => {
 
   return (
     <div className="bg-white p-4 rounded-lg w-full">
-      <div className="flex justify-between items-center mb-4">
-        <h3 className="text-lg font-semibold">Upcoming Schedule</h3>
+      <div className="flex justify-between items-center mb-4 flex-wrap">
+        <h3 className="text-lg font-semibold text-wrap">Upcoming Schedule</h3>
         <select className="border rounded-lg px-2 py-1 m-1">
           <option>
             {new Date().toLocaleDateString("en-US", {

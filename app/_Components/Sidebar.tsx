@@ -73,7 +73,7 @@ const Sidebar: React.FC = () => {
 
     const renderMenuSection = (title: string, items: Array<{ id: number; icon: JSX.Element; label: string }>) => {
         return (
-            <div className="flex flex-col gap-y-3 items-start md:items-center w-full lg:ml-14 mb-12">
+            <div className="flex flex-col gap-y-3 items-start md:items-center w-full lg:ml-14 mb-12 ">
                 <p className="text-base text-gray-400 lg:text-left w-full md:text-center">{title}</p>
                 {items.map((item) => renderSidebarItem(item, item.label === 'Dashboard'))}
             </div>
@@ -81,7 +81,7 @@ const Sidebar: React.FC = () => {
     };
 
     return (
-        <div className="h-full bg-gray-200/20 flex-col items-start md:items-center md:flex md:w-full sm:ml-4">
+        <div className="h-full bg-gray-200/20 flex-col items-start md:items-center md:flex md:w-full ml-6">
             {/* Logo Section */}
             <div className="flex items-center justify-start md:justify-center m-8">
                 <Image
