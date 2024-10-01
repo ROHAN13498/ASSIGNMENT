@@ -46,7 +46,7 @@ const analyticsData: AnalyticsData[] = [
     num: 216,
     men: 120,
     women: 96,
-    chartData: [1, 205, 210, 215, 220, 216],
+    chartData: [1, 205, 210, 215, 220, 300],
   },
   {
     header: "Talent Requests",
@@ -64,7 +64,7 @@ const DashBoard = () => {
 
       <div className="flex gap-x-6 flex-wrap lg:flex-nowrap">
         <div className="flex flex-col gap-y-6 w-full">
-          <div className="md:justify-start flex flex-col sm:flex-col md:flex-row lg:flex-row gap-5 m-2 lg:justify-start sm:justify-center sm:flex-wrap md:flex-nowrap lg:flex-nowrap">
+          <div className="md:justify-evenly flex flex-col sm:flex-col md:flex-row lg:flex-row gap-5 m-2 lg:justify-start sm:justify-center sm:flex-wrap md:flex-nowrap lg:flex-nowrap">
             {data.map((d) => (
               <Card
                 key={d.header}
@@ -77,7 +77,7 @@ const DashBoard = () => {
           </div>
 
           {/* Analytics Cards Section */}
-          <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row gap-5 m-2 lg:justify-start md:justify-start sm:justify-center sm:flex-wrap md:flex-nowrap lg:flex-nowrap w-full ">
+          <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row gap-5 m-2 lg:justify-start md:justify-evenly sm:justify-center sm:flex-wrap md:flex-nowrap lg:flex-nowrap w-full ">
             {analyticsData.map((d) => (
               <AnalyticsCard
                 key={d.header}
@@ -95,7 +95,7 @@ const DashBoard = () => {
           </div>
         </div>
 
-        <div className="flex md:flex-row lg:flex-col gap-y-6 gap-x-2 flex-wrap w-full">
+        <div className="flex flex-col sm:flex-col md:flex-row lg:flex-col gap-y-6 gap-x-2 flex-wrap w-full">
           {/* Recent Activity Component */}
           <RecentActivty />
 
@@ -106,5 +106,6 @@ const DashBoard = () => {
     </div>
   );
 };
+
 
 export default DashBoard;

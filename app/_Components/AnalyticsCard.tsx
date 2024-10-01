@@ -26,14 +26,14 @@ const AnalyticsCard = ({ header, num, men, women, chartData }: Props) => {
   const growthPercentage = growth.toFixed(2);
 
   return (
-    <div className={`rounded-xl p-4 lg:w-[270px] border border-slate-300 flex gap-x-2`}>
+    <div className={`rounded-xl p-4 lg:w-[270px] border border-slate-300 flex gap-x-2 justify-between`}>
       <div className='flex flex-col justify-start'>
         <p className='font-bold'>{header}</p>
         <p className='text-5xl'>{num}</p>
         <p>Men: {men}</p>
         <p>Women: {women}</p>
       </div>
-      <div className='flex flex-col'>
+      <div className='flex flex-col gap-y-4'>
         <div className='h-20 w-24'>
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data}>
