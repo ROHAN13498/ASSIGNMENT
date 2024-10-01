@@ -9,7 +9,7 @@ export default function Home() {
       <Sidebar />
       </div>
      
-      <div className="col-span-12 md:col-span-11 lg:col-span-10 h-full bg-gray-100 md:w-11/12 lg:w-10/12">
+      <div className="col-span-12 md:col-span-11 lg:col-span-10 h-full bg-gray-100 lg:w-full">
         <Navbar />
         <DashBoard />
       </div>
